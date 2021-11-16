@@ -30,19 +30,15 @@ flutter run
 <img
 		width="210"
 		alt="Capture 1"
-		src="">
+		src="https://github.com/thephenomenal10/consultadd_asgmt/blob/master/assets/images/1.png">
 <img
 		width="210"
 		alt="Capture 2"
-		src="">
+		src="https://github.com/thephenomenal10/consultadd_asgmt/blob/master/assets/images/2.png">
 <img
 		width="210"
 		alt="Capture 3"
-		src="">
-<img
-		width="210"
-		alt="Capture 4"
-		src="">
+		src="https://github.com/thephenomenal10/consultadd_asgmt/blob/master/assets/images/3.png">
 
 
 
