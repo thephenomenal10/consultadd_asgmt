@@ -79,7 +79,7 @@ class _BudgetViewState extends State<BudgetView>
                             height: 10,
                           ),
                           Text(
-                            "budget limit for April, 2021",
+                            "budget limit for Nov, 2021",
                             style: Theme.of(context).textTheme.subtitle1,
                           ),
                         ],

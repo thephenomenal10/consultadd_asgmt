@@ -37,7 +37,7 @@ class _SummaryViewState extends State<SummaryView> {
                 ],
               ),
               Text(
-                "Aug, 2021",
+                "Nov, 2021",
                 style: Theme.of(context)
                     .textTheme
                     .subtitle2!
