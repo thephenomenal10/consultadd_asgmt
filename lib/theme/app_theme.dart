@@ -8,6 +8,11 @@ final appThemeData = {
   AppTheme.appTheme: ThemeData(
       brightness: Brightness.light,
       primaryColor: blueColor,
+      colorScheme: ColorScheme.fromSwatch(
+          accentColor: blueColor // but now it should be declared like this
+          ),
+      bottomNavigationBarTheme:
+          BottomNavigationBarThemeData(backgroundColor: Colors.green),
       scaffoldBackgroundColor: white1,
       primaryColorLight: white1,
       textTheme: TextTheme(
@@ -28,6 +33,12 @@ final appThemeData = {
           letterSpacing: 0.1,
           color: Colors.black,
           fontSize: 16,
+        ),
+        headline4: GoogleFonts.nunitoSans(
+          fontWeight: FontWeight.bold,
+          letterSpacing: 0.1,
+          color: blueColor,
+          fontSize: 36,
         ),
         subtitle1: GoogleFonts.nunitoSans(
           letterSpacing: 0.3,

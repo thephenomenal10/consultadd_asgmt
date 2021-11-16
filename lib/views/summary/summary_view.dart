@@ -1,9 +1,8 @@
 import 'package:consultadd_asgmt/theme/color_theme.dart';
-import 'package:consultadd_asgmt/views/expenses/widgets/top_category.dart';
+import 'package:consultadd_asgmt/views/summary/widgets/top_category.dart';
 import 'package:consultadd_asgmt/views/summary/widgets/container_curve.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
-import 'package:percent_indicator/percent_indicator.dart';
 
 class SummaryView extends StatefulWidget {
   const SummaryView({Key? key}) : super(key: key);
@@ -142,7 +141,7 @@ class _SummaryViewState extends State<SummaryView> {
                   style: Theme.of(context).textTheme.headline2,
                 ),
               ),
-              topCategory()
+              topCategory(context)
             ],
           ),
         ),

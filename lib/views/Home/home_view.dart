@@ -1,5 +1,6 @@
 import 'package:consultadd_asgmt/views/Wallet/wallet_view.dart';
-import 'package:consultadd_asgmt/views/expenses/expenses_view.dart';
+import 'package:consultadd_asgmt/views/budget/budget_view.dart';
+import 'package:consultadd_asgmt/views/coming_soon.dart';
 import 'package:consultadd_asgmt/views/summary/summary_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
@@ -40,11 +41,15 @@ class _HomeViewState extends State<HomeView> {
   Widget _showScreen() {
     switch (currentIndex) {
       case 0:
-        return ExpensesView();
+        return  BudgetView();
       case 1:
         return WalletView();
+      case 2:
+        return ComingSoonView();
       case 3:
         return SummaryView();
+      case 4:
+        return ComingSoonView();
       default:
         return Container(
           child: Text("Default"),
@@ -55,7 +60,8 @@ class _HomeViewState extends State<HomeView> {
   Widget _showBottomNavigationBar(context) {
     return BottomNavigationBar(
         elevation: 0,
-        backgroundColor: Color(0x00ffffff),
+        backgroundColor:
+            Theme.of(context).bottomNavigationBarTheme.backgroundColor,
         selectedItemColor: Theme.of(context).primaryColor,
         unselectedItemColor: Theme.of(context).primaryColor,
         onTap: updateIndex,

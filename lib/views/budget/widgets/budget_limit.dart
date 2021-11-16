@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 
-Widget budgetLimit(context) {
+Widget budgetLimit(
+    context, itemBudget, spentMoney, itemName, itemImage, sliderPercent) {
   return Container(
     // height: 250,
     // width: 50s,
@@ -32,7 +33,7 @@ Widget budgetLimit(context) {
                   )),
               child: Center(
                   child: Text(
-                "🍔",
+                "$itemImage",
                 style: TextStyle(fontSize: 40),
               )),
             ),
@@ -41,11 +42,11 @@ Widget budgetLimit(context) {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Food & Drink",
+                "$itemName",
                 style: Theme.of(context).textTheme.headline2,
               ),
               Text(
-                "\$150/month",
+                "\$$itemBudget/month",
                 style: Theme.of(context).textTheme.subtitle2,
               )
             ],
@@ -57,8 +58,8 @@ Widget budgetLimit(context) {
         child: LinearPercentIndicator(
           backgroundColor: Colors.grey.shade100,
           lineHeight: 20,
-          percent: .4,
-          center: Text("\$450"),
+          percent: sliderPercent,
+          center: Text("\$$spentMoney"),
           // isRTL: true,
           linearGradient: LinearGradient(colors: [
             Color(0xff5BB5E5),
@@ -69,7 +70,7 @@ Widget budgetLimit(context) {
       ),
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 38, vertical: 10),
-        child: Text("Spent \$450 from \$1400",
+        child: Text("Spent \$$spentMoney from \$$itemBudget",
             style: Theme.of(context).textTheme.caption),
       ),
       Divider(
